@@ -1,0 +1,25 @@
+EBSFlipX - PDF Flipbook Viewer
+
+EBSFlipX is a lightweight PHP/JS-based system designed to present PDF documents with an impressive flipbook (page-turning) effect. PDF pages are converted into .png images and displayed like a real book experience.
+
+Features:
+- Displays PDF pages as .png images
+- Realistic page-turning effect (powered by turn.js)
+- Fully customizable CSS styling
+- Audio effect support (.ogg format)
+- Responsive design for mobile and desktop
+
+Folder Structure:
+- /EBS_pdf_pages: Image files for each PDF page
+- /css: Flipbook and global style files
+- /includes: PHP files for PDF conversion
+- /javascript: Flipbook and interaction scripts
+- /media: Audio files
+- index.php: Main entry point
+
+Usage:
+1. Convert your PDF pages to .png and upload them to the /EBS_pdf_pages folder (naming must be sequential: page_1.png, page_2.png, etc.)
+2. Upload the project to a PHP-supported server
+3. Open index.php in your browser and enjoy the flipbook view
+
+Simple, fast, and beautiful. Add flipbook experience to your project with ease.

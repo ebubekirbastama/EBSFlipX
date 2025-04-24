@@ -1,0 +1,106 @@
+/* BODY (overall page settings) */
+body {
+    text-align: center; /* Center the text and content on the page */
+    background-color: #000000c4; /* Page background color: semi-transparent black */
+}
+
+/* MAGAZINE CONTAINER */
+#magazine {
+    width: 100%; /* Width is 100% of the container */
+    max-width: 1152px;  /* Maximum width is limited to 1152px */
+    height: 100vh;       /* Height is 100% of the viewport height */
+    margin: 0 auto; /* Center the page */
+    position: relative; /* Reference position for inner elements */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Light shadow for the frame */
+    resize: both;  /* User can resize it both horizontally and vertically */
+    overflow: hidden; /* Hide content if it overflows */
+}
+
+/* MAGAZINE PAGES */
+#magazine .turn-page {
+    background-size: 100% 100%; /* If there is a background image, make it cover the whole page */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Page shadow (depth effect) */
+    border-radius: 10px; /* Rounded corners for the pages */
+}
+
+/* AREA CONTAINING PAGE TURNING BUTTONS */
+.flipShotBar {
+    position: fixed; /* Fixes the position on the screen, stays in place when scrolling */
+    bottom: 20px; /* Positioned 20px from the bottom of the screen */
+    left: 50%; /* Positioned 50% from the left side of the screen */
+    transform: translateX(-50%); /* Offset by -50% to center it */
+    display: flex; /* Aligns child elements horizontally */
+    gap: 20px; /* 20px space between buttons */
+    z-index: 9999; /* Makes sure it's visible above all other content */
+}
+
+/* PAGE TURNING BUTTONS */
+.flipbutton {
+    width: 50px; /* Button width */
+    height: 50px; /* Button height */
+    background-color: #ffffffcc; /* Semi-transparent white background */
+    border: 2px solid #444; /* Border color (dark gray) */
+    border-radius: 50%; /* Makes the button circular */
+    display: flex; /* Used to center the icon inside */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    cursor: pointer; /* Shows the hand cursor on hover */
+    transition: all 0.3s ease; /* Smooth transition effect on hover */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Light shadow (3D effect) */
+}
+
+/* BUTTON HOVER EFFECT */
+.flipbutton:hover {
+    background-color: #444; /* Dark gray background on hover */
+    color: white; /* Change the text color to white */
+}
+
+/* SVG (icons) style */
+.flipbutton svg {
+    width: 24px; /* Icon width */
+    height: 24px; /* Icon height */
+    fill: #444; /* Icon color (dark gray) */
+    transition: fill 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* SVG hover effect */
+.flipbutton:hover svg {
+    fill: white; /* Change icon color to white on hover */
+}
+
+/* LOADING SCREEN */
+#loading {
+    position: fixed; /* Fixed position on the screen */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8); /* White, semi-transparent background */
+    display: flex; /* Used to center the content */
+    justify-content: center; /* Horizontally center the spinner */
+    align-items: center; /* Vertically center the spinner */
+    font-size: 18px; /* Font size */
+    color: #333; /* Text color (dark gray) */
+    z-index: 999; /* Makes sure it appears above all other content */
+    display: none; /* Initially hidden */
+}
+
+/* SPINNER (loading animation) */
+.spinner {
+    width: 50px; /* Spinner width */
+    height: 50px; /* Spinner height */
+    border: 4px solid #f3f3f3; /* Outer ring (light gray) */
+    border-top: 4px solid #3498db; /* Top ring (blue) for the spinning effect */
+    border-radius: 50%; /* Circular shape */
+    animation: spin 2s linear infinite; /* Continuous rotation animation */
+}
+
+/* LOADING SPINNER ANIMATION */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Initial rotation angle */
+    }
+    100% {
+        transform: rotate(360deg); /* Full rotation */
+    }
+}
