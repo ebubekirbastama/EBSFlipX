@@ -33,6 +33,20 @@ EBSFlipX allows you to present your PDF documents with a stylish and interactive
 3. Open index.php in your browser to launch the flipbook
 
 --------------------------------------------------
+## 📸 Preview - Flipbook Slides
+
+Below is a preview of how EBSFlipX renders PDF pages as a flipbook. Each image represents a sample page.
+
+<p align="center">
+  <img src="s1.png" width="500" alt="Page 1">
+  <img src="s2.png" width="500" alt="Page 2">
+  <img src="s3.png" width="500" alt="Page 3">
+  <img src="s4.png" width="500" alt="Page 4">
+  <img src="s5.png" width="500" alt="Page 5">
+  <img src="s6.png" width="500" alt="Page 6">
+</p>
+
+--------------------------------------------------
 
 ⚠️ License: This project is licensed under the Apache License 2.0.
 🛑 Not for Sale: This software is NOT allowed to be sold. It is intended for personal and open-source project use only.
